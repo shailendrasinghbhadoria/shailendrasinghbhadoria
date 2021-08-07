@@ -35,3 +35,6 @@ Route::get('/destroy/{id}', 'App\Http\Controllers\LoginController@destroy')->nam
 Route::get('/logout', 'App\Http\Controllers\LoginController@logout');
 });
 //Route::post('/login', 'LoginController@process')->name('process');
+
+Route::get('/profile', 'App\Http\Controllers\ProfileController@index')->name('Login.profile');
+Route::post('/profile', 'App\Http\Controllers\ProfileController@create')->name('Login.profile');

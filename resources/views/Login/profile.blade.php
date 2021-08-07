@@ -5,21 +5,17 @@
 
 		<div class="row">
 			<div class="col-sm-12">
-				<h1>Create Your Account</h1>
-				<form action="{{ route('Login.login')}}" method="POST" style="padding-top:20px;">
+				<h1>Create Your Profile</h1>
+				<form action="{{ route('Login.profile')}}" method="POST" style="padding-top:20px;">
 					{{ csrf_field() }}
 					<div class="">
-						<label>Username</label>
-						<input type="text" name="name" id="user" class="form-control" required />
-					</div>
-					<div class="">
-						<label>Password</label>
-						<input type="password" id="pw" name="password" class="form-control" required/>
-					</div>
+						<label>Full Name</label>
+						<input type="text" name="name" class="form-control" required />
+					</div>					
 
 					<div class="">
-						<label>Email</label>
-						<input type="email" id="pw" name="email" class="form-control" required/>
+						<label>Address</label>
+						<input type="text"  name="address" class="form-control" required/>
 					</div>
 
 					<div class="">
@@ -41,6 +37,10 @@
 							<option value="Pune">Pune</option>
 							
 						</select>
+					</div>
+					<div class="">
+						<label>Zip Code</label>
+						<input type="number"  name="zip" class="form-control" required/>
 					</div>
 
 					<div class="">						
